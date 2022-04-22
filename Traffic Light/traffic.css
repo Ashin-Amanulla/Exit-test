@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 5rem 0;
+    text-align: center;
+    background-color: #263238;
+}
+
+body > div.light_container {
+    display: inline-block;
+    width: 12.5rem;
+    box-sizing: border-box;
+    padding: 2.5rem;
+    background-color: #37474F;
+    box-shadow: 0 0 1rem #37474F;
+    border-radius: 6px;
+}
+body > div.light_container > div.light {
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 50%;
+    background-color: #455A64;
+    opacity: 0.75;
+    cursor: pointer;
+}
+body > div.light_container > div.light:hover {
+    opacity: 1;
+}
+body > div.light_container > div.light:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+body > div.light_container#red > div.light.red {
+    background-color: #e74c3c;
+    box-shadow: 0 0 1rem #e74c3c;
+    opacity: 1;
+}
+body > div.light_container#yellow > div.light.yellow {
+    background-color: #f1c40f;
+    box-shadow: 0 0 1rem #f1c40f;
+    opacity: 1;
+}
+body > div.light_container#green > div.light.green {
+    background-color: #27ae60;
+    box-shadow: 0 0 1rem #27ae60;
+    opacity: 1;
+}

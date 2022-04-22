@@ -1,0 +1,48 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+}
+
+.grid {
+  margin: 0;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 6rem);
+  gap: 1rem;
+  list-style-type: none;
+}
+
+button {
+  margin: 0 auto;
+  padding: 1rem;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+.cell {
+  display: block;
+  width: 6rem;
+  height: 6rem;
+  background-color: hsl(0, 0%, 90%);
+  transition: 0.3s;
+}
+
+.cell:hover {
+  border: 2px solid #ccc;
+}
